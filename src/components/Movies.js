@@ -10,7 +10,7 @@ export const Movies = ({ movies }) => {
 
   const handleSearch = async () => {
     try {
-      const response = await fetch(`http://localhost:3001/api/movie/search?search_text=${searchText}`);
+      const response = await fetch(`http://api.se-rmutl.net/api/movie/search?search_text=${searchText}`);
       const data = await response.json();
 
       if (data.returnCode === 1) {

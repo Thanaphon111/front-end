@@ -1,8 +1,9 @@
 export async function getAllMovies() {
+    
 
     try{
         const response = await fetch('http://api.se-rmutl.net/api/movie/all');
-       
+        
         return await response.json();
     }catch(error) {
         return [];
